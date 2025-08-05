@@ -10,13 +10,13 @@ namespace MisalignedSpace {
             Console.WriteLine("{0,-3} | {1,-7} | {2,-6}", "No", "Major", "Minor");
             for(int i = 0; i < majorColors.Length; i++) {
                 for(int j = 0; j < minorColors.Length; j++) {
-                    Console.WriteLine("{0,-3} | {1,-7} | {2,-6}", pairNumber, majorColors[i], minorColors[j]);
-                    pairNumber++;
+                    Console.WriteLine("{0,-3} | {1,-7} | {2,-6}", Colourcount, majorColors[i], minorColors[j]);
+                    Colourcount++;
                 }
             }
-            Debug.Assert(pairNumber == majorColors.Length * minorColors.Length);
-            Debug.Assert(pairNumber == 25);
-            return pairNumber;
+            Debug.Assert(Colourcount == majorColors.Length * minorColors.Length);
+            Debug.Assert(Colourcount == 25);
+            return Colourcount;
         }
         static void Main(string[] args) {
             int result = printColorMap();
